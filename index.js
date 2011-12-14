@@ -15,9 +15,15 @@ server.get(new RegExp("^/(.*)(?:.jpg)?$"), function(request, response, match) {
     var output = match.indexOf('.jpg') >= 0 ? '/imgs/'+match : '/imgs/'+match+'.jpg';
 
     fs.readFile(__dirname+output, function (err, data) {
-        response.writeHead(200, {'Content-Type': 'image/jpeg' })
-        response.end(data)
+        if (err) {
+            response.writeHead(404);
+            response.end('Ups, we don\'t have image for that status code yet.');
+        }
+        else {
+            response.writeHead(200, {'Content-Type': 'image/jpeg' });
+            response.end(data);
+        }
     });
 })
 
-server.listen(process.env.PORT || 8080, '0.0.0.0')
+server.listen(process.env.PORT || 8080, '0.0.0.0');
