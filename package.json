@@ -1,0 +1,8 @@
+{
+  "name": "httpcats",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "2.1.1",
+    "node-router": "https://github.com/creationix/node-router/tarball/master"
+  }
+}
