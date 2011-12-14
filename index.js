@@ -20,7 +20,7 @@ server.get(new RegExp("^/(.*)(?:.jpg)?$"), function(request, response, match) {
             response.end('Ups, we don\'t have image for that status code yet.');
         }
         else {
-            response.writeHead(200, {'Content-Type': 'image/jpeg' });
+            response.writeHead(200, {'Content-Type': 'image/jpeg', 'Cache-Control': 'max-age=3600, public' });
             response.end(data);
         }
     });
