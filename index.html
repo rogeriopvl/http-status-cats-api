@@ -3,65 +3,97 @@
     <head>
         <meta charset=utf-8>
         <meta name="author" content="Rogério Vicente">
-        <title>HTTP Status Cats</title>
+        <meta name="description" content="An API for the awesome HTTP Cats! Use it in your website to show funny error messages.">
+        <meta name="keywords" content="httpcats, cats, error, http, lolcats">
+        <title>HTTP Status Cats API</title>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+
+        <!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+        <style type="text/css">
+            body { background: #fff; font-size: 100%; line-height: 1.6em; color: #222; }
+            header { color: #000; margin-bottom: 2em; }
+            pre {
+                font-family: "Droid Sans Mono", Courier, monospace;
+                font-size: 95%;
+                background-color: #ccccff;
+                border: 1px solid #6699ff;
+                padding: 1.5em;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+            }
+            code { font-family: "Droid Sans Mono", Courier, monospace; font-size: 90%; background-color: #ccccff; padding: 0.1em; }
+           footer { margin-top: 5em; font-style: italic; }
+            #container { width: 44em; max-width: 90%; margin: 0 auto; }
+        </style>
     </head>
     <body>
-        <h1>HTTP Status Cats</h1>
-        <p><b>Usage:</b> <code>http://httpcats.herokuapp.com/[http_status_code]</code></p>
-        <p>If you need for some reason to use an image extension, add <code>.jpg</code> to the URL.</p>
-        <h2>Available status codes:</h2>
-        <p>
-            <a href="/100">100</a> 
-            <a href="/200">200</a> 
-            <a href="/206">206</a> 
-            <a href="/207">207</a> 
-            <a href="/207">207</a> 
-            <a href="/300">300</a> 
-            <a href="/301">301</a> 
-            <a href="/303">303</a> 
-            <a href="/307">307</a> 
-            <a href="/401">401</a> 
-            <a href="/402">402</a> 
-            <a href="/403">403</a> 
-            <a href="/404">404</a> 
-            <a href="/405">405</a> 
-            <a href="/406">406</a> 
-            <a href="/408">408</a> 
-            <a href="/409">409</a> 
-            <a href="/410">410</a> 
-            <a href="/413">413</a> 
-            <a href="/414">414</a> 
-            <a href="/416">416</a> 
-            <a href="/417">417</a> 
-            <a href="/418">418</a> 
-            <a href="/422">422</a> 
-            <a href="/423">423</a> 
-            <a href="/424">424</a> 
-            <a href="/426">426</a> 
-            <a href="/429">429</a> 
-            <a href="/431">431</a> 
-            <a href="/444">444</a> 
-            <a href="/450">450</a> 
-            <a href="/500">500</a> 
-            <a href="/502">502</a> 
-            <a href="/507">507</a> 
-            <a href="/508">508</a> 
-            <a href="/599">599</a> 
-        </p>
+        <div id="container">
+            <header>
+                <h1>HTTP Status Cats API</h1>
+            </header>
+            <h2>Usage:</h2>
+            <pre>http://httpcats.herokuapp.com/[http_status_code]</pre>
+            <p>If you need for some reason to use an image extension, add <code>.jpg</code> to the URL.</p>
+            <h2>Available status codes:</h2>
+            <p>
+                <a href="/100">100</a> 
+                <a href="/200">200</a> 
+                <a href="/206">206</a> 
+                <a href="/207">207</a> 
+                <a href="/207">207</a> 
+                <a href="/300">300</a> 
+                <a href="/301">301</a> 
+                <a href="/303">303</a> 
+                <a href="/307">307</a> 
+                <a href="/401">401</a> 
+                <a href="/402">402</a> 
+                <a href="/403">403</a> 
+                <a href="/404">404</a> 
+                <a href="/405">405</a> 
+                <a href="/406">406</a> 
+                <a href="/408">408</a> 
+                <a href="/409">409</a> 
+                <a href="/410">410</a> 
+                <a href="/413">413</a> 
+                <a href="/414">414</a> 
+                <a href="/416">416</a> 
+                <a href="/417">417</a> 
+                <a href="/418">418</a> 
+                <a href="/422">422</a> 
+                <a href="/423">423</a> 
+                <a href="/424">424</a> 
+                <a href="/426">426</a> 
+                <a href="/429">429</a> 
+                <a href="/431">431</a> 
+                <a href="/444">444</a> 
+                <a href="/450">450</a> 
+                <a href="/500">500</a> 
+                <a href="/502">502</a> 
+                <a href="/507">507</a> 
+                <a href="/508">508</a> 
+                <a href="/599">599</a> 
+            </p>
 
-        <p>Developed by <a href="http://rogeriopvl.com">Rogério Vicente</a>. Photos from <a href="http://www.flickr.com/photos/girliemac/sets/72157628409467125/with/6509400997/">GirlieMac</a></p>
+            <footer>
+                <p>Developed by <a href="http://rogeriopvl.com">Rogério Vicente</a>. Photos from <a href="http://www.flickr.com/photos/girliemac/sets/72157628409467125/with/6509400997/">GirlieMac</a>.</p>
+            </footer>
+
+        </div> <!-- container -->
 
         <script type="text/javascript">
 
-          var _gaq = _gaq || [];
-          _gaq.push(['_setAccount', 'UA-27701865-1']);
-          _gaq.push(['_trackPageview']);
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-27701865-1']);
+            _gaq.push(['_trackPageview']);
 
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
 
         </script>
     </body>
