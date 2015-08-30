@@ -1,3 +1,6 @@
+## This repo is deprecated:
+The current HTTP Cats API is hosted at [https://http.cat](https://http.cat) and the repo is at [rogeriopvl/http.cat](https://github.com/rogeriopvl/http.cat).
+
 # HTTP Status Cats API
 
 This is the code that powers http://httpcats.herokuapp.com
