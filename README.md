@@ -1,4 +1,6 @@
 ## This repo is deprecated:
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogeriopvl/http-status-cats-api.svg)](https://greenkeeper.io/)
 The current HTTP Cats API is hosted at [https://http.cat](https://http.cat) and the repo is at [rogeriopvl/http.cat](https://github.com/rogeriopvl/http.cat).
 
 # HTTP Status Cats API
